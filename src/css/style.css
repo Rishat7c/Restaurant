@@ -1,0 +1,24 @@
+.buttons {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0px;
+}
+.buttons:hover {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0px;
+    -fx-border-color: green;
+    -fx-border-width: 0px 0px 0px 4px;
+    -fx-border-style: solid;
+}
+.roundLabel {
+    -fx-background-color: #B20837;
+    -fx-background-radius: 100%;
+}
+.closeBtn {
+    -fx-background-color: transparent;
+}
+.closeBtn:hover {
+    -fx-background-color: #cccccc;
+}
+.jfx-hamburger StackPane {
+    -fx-background-color: gray;
+}

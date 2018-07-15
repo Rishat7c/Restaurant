@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="661.0" prefWidth="178.0" style="-fx-background-color: #3D4956;" stylesheets="/css/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.MainContentController">
+   <children>
+      <Label alignment="BASELINE_CENTER" contentDisplay="RIGHT" prefHeight="35.0" prefWidth="35.0">
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/img/bell.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+      </Label>
+      <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="20.0" styleClass="roundLabel" text="2" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="28.0" top="-45.0" />
+         </VBox.margin>
+      </Label>
+      <Label prefHeight="69.0" prefWidth="139.0" style="-fx-text-fill: linear-gradient(from 0% 0% to 100% 200%, repeat, green 0%, deepskyblue 50%);" text="Restaurant" textFill="WHITE">
+         <VBox.margin>
+            <Insets bottom="10.0" left="20.0" right="10.0" top="10.0" />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+         </padding>
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="b1" alignment="BASELINE_LEFT" buttonType="RAISED" onAction="#open_Menu" prefHeight="70.0" prefWidth="231.0" ripplerFill="#0077ff" style="-fx-background-color: #3D4956;" styleClass="buttons" stylesheets="/css/style.css" text="Меню" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/menu.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <JFXButton fx:id="b2" alignment="BASELINE_LEFT" buttonType="RAISED" layoutX="10.0" layoutY="123.0" onAction="#open_Stock" prefHeight="73.0" prefWidth="231.0" ripplerFill="#0077ff" style="-fx-background-color: #3D4956;" styleClass="buttons" stylesheets="/css/style.css" text="Склад" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/stock.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <JFXButton fx:id="b3" alignment="BASELINE_LEFT" buttonType="RAISED" layoutX="10.0" layoutY="197.0" onAction="#open_Alcohol" prefHeight="74.0" prefWidth="231.0" ripplerFill="#0077ff" style="-fx-background-color: #3D4956;" styleClass="buttons" stylesheets="/css/style.css" text="Алкоголь" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/alcohol.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <JFXButton fx:id="b31" alignment="BASELINE_LEFT" buttonType="RAISED" onAction="#open_Staff" prefHeight="74.0" prefWidth="231.0" ripplerFill="#0077ff" style="-fx-background-color: #3D4956;" styleClass="buttons" stylesheets="/css/style.css" text="Персонал" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/staff.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <JFXButton fx:id="b311" alignment="BASELINE_LEFT" buttonType="RAISED" onAction="#open_Card" prefHeight="74.0" prefWidth="231.0" ripplerFill="#0077ff" style="-fx-background-color: #3D4956;" styleClass="buttons" stylesheets="/css/style.css" text="Скидочная карта" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/discount-card.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <JFXButton fx:id="exit" alignment="BASELINE_LEFT" buttonType="RAISED" layoutX="10.0" layoutY="271.0" onAction="#SignOut" prefHeight="74.0" prefWidth="231.0" ripplerFill="#0077ff" style="-fx-background-color: #3D4956;" styleClass="buttons" stylesheets="/css/style.css" text="Выйти" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/out.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+   </children>
+</VBox>

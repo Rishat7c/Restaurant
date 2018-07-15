@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="493.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.content.MenuController">
+   <children>
+      <Pane layoutX="7.0" layoutY="6.0" prefHeight="300.0" prefWidth="250.0" style="-fx-background-color: #C0C5E3;" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <Label alignment="CENTER" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="250.0" text="Закуски" textFill="#0c88a4">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="149.0" fitWidth="221.0" layoutX="17.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/img/menu_categories/zakuski.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="16.0" layoutY="212.0" text="Закуска часто употребляется &#10;вместе со спиртными напитками&#10;" textFill="#727171" />
+            <JFXButton buttonType="RAISED" layoutX="24.0" layoutY="256.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #0c88a4; -fx-background-radius: 0px;" text="Подробнее" textFill="WHITE" />
+         </children>
+      </Pane>
+      <Pane layoutX="285.0" layoutY="21.0" prefHeight="300.0" prefWidth="250.0" style="-fx-background-color: #C0C5E3;" AnchorPane.leftAnchor="285.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <Label alignment="CENTER" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="250.0" text="Бургеры" textFill="#0c88a4">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="149.0" fitWidth="221.0" layoutX="47.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/img/menu_categories/burger.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="17.0" layoutY="210.0" text="Вид сэндвича, состоящий из &#10;рубленой жареной котлеты&#10;" textFill="#727171" />
+            <JFXButton buttonType="RAISED" layoutX="24.0" layoutY="256.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #0c88a4; -fx-background-radius: 0px;" text="Подробнее" textFill="WHITE" />
+         </children>
+      </Pane>
+      <Pane layoutX="551.0" layoutY="23.0" prefHeight="300.0" prefWidth="250.0" style="-fx-background-color: #C0C5E3;" AnchorPane.leftAnchor="551.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <Label alignment="CENTER" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="250.0" text="Пицца" textFill="#0c88a4">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="149.0" fitWidth="221.0" layoutX="17.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/img/menu_categories/pizza.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="16.0" layoutY="195.0" text="Тонкая лепёшка из дрожжевого &#10;теста с запечённой на ней &#10;сложной начинкой&#10;" textFill="#727171" />
+            <JFXButton buttonType="RAISED" layoutX="24.0" layoutY="256.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #0c88a4; -fx-background-radius: 0px;" text="Подробнее" textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

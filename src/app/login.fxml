@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="513.0" prefWidth="569.0" style="-fx-background-color: null;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.LoginController">
+   <children>
+      <AnchorPane fx:id="topbar" layoutX="-3.0" prefHeight="513.0" prefWidth="104.0" style="-fx-background-color: #3D4956;">
+         <children>
+            <ImageView fx:id="btn_user" layoutX="40.0" layoutY="55.0" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/img/icons8-user.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btn_setting" layoutX="38.0" layoutY="172.0" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/img/icons8-settings.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btn_info" layoutX="37.0" layoutY="303.0" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/img/icons8-info.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btn_exit" layoutX="39.0" layoutY="428.0" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/img/icons8-exit.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="h_user" layoutX="112.0" onDragDetected="#handleButtonAction" prefHeight="513.0" prefWidth="457.0" style="-fx-background-color: #3D4956;">
+         <children>
+            <JFXTextField fx:id="txtUsername" layoutX="133.0" layoutY="230.0" prefHeight="27.0" prefWidth="191.0" promptText="Введите имя" style="-fx-prompt-text-fill: #049fff; -fx-text-fill: white;" unFocusColor="WHITE" />
+            <JFXPasswordField fx:id="txtPassword" layoutX="133.0" layoutY="306.0" prefHeight="27.0" prefWidth="191.0" promptText="Введите пароль" style="-fx-prompt-text-fill: #049fff; -fx-text-fill: white;" unFocusColor="WHITE" />
+            <JFXButton layoutX="155.0" layoutY="381.0" onAction="#btnLoginAction" prefHeight="27.0" prefWidth="146.0" style="-fx-border-radius: 5em; -fx-background-radius: 5em;" text="Войти" textFill="WHITE" />
+            <ImageView fitHeight="88.0" fitWidth="248.0" layoutX="118.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/img/ElMont.png" />
+               </image></ImageView>
+            <Label fx:id="isConnected" layoutX="133.0" layoutY="434.0" prefHeight="17.0" prefWidth="191.0" textFill="#c944ba" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="h_setting" layoutX="113.0" onDragDetected="#handleButtonAction" prefHeight="513.0" prefWidth="457.0" style="-fx-background-color: #3D4956;" visible="false">
+         <children>
+            <Label layoutX="32.0" layoutY="37.0" text="СИНХРОНИЗАЦИЯ www.elmont.cloud" textFill="WHITE" />
+            <JFXToggleButton layoutX="318.0" layoutY="16.0" text="On" textFill="#4ca838" />
+            <Label layoutX="32.0" layoutY="97.0" text="ЛОКАЛЬНАЯ БАЗА ДАННЫХ" textFill="WHITE" />
+            <JFXToggleButton layoutX="318.0" layoutY="75.0" text="On" textFill="#4ca838" />
+            <Separator layoutX="32.0" layoutY="271.0" prefHeight="4.0" prefWidth="395.0" />
+            <Label layoutX="32.0" layoutY="153.0" text="Android/iOS подключение устройства&#10;" textFill="WHITE" />
+            <JFXToggleButton layoutX="318.0" layoutY="128.0" text="On" textFill="#4ca838" />
+            <JFXCheckBox layoutX="35.0" layoutY="323.0" text="Сохранить сессию?" textFill="WHITE" unCheckedColor="WHITE" />
+            <JFXButton layoutX="165.0" layoutY="407.0" onAction="#btnLoginAction" prefHeight="27.0" prefWidth="146.0" style="-fx-border-radius: 5em; -fx-background-radius: 5em;" text="Сохранить" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="h_info" layoutX="112.0" layoutY="-1.0" onDragDetected="#handleButtonAction" prefHeight="513.0" prefWidth="457.0" style="-fx-background-color: #3D4956;" visible="false">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="129.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/img/ElMont.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="60.0" layoutY="181.0" text="Облачный сервис для автоматизации кафе, ресторана &#10;на персональном компьютере и планшете. &#10;Имеет понятный и простой интерфейс, состоит из &#10;фронт-офиса и бэк-офиса с системой для &#10;автономной работы складским учетом, отчетами и &#10;поддержкой необходимого доп. оборудования" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="23.0" layoutY="353.0" text="Приложение разработано компанией ООО &quot;ЭлМонт&quot;&#10;&#10;Гайсин Ришат - front &amp; back-end разработка локального приложения&#10;Желнов Михаил - back-end разработка локального приложения&#10;Доронин Евгений -  back-end разработка облачного сервиса &#10;&#10;www.elmont.cloud " textFill="GREY">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
